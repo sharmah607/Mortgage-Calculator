@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortgage Calculator</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <!-- Header Section -->
+      <div class="header">
+        <h1 class="title">Mortgage Calculator</h1>
+        <!-- Clear Button -->
+        <button type="button" id="clearBtn" class="clear-button">Clear All</button>
+      </div>
+
+      <!-- Form Section -->
+      <form id="mortgageForm">
+        <!-- Mortgage Amount -->
+        <label for="amount">Mortgage Amount:</label>
+        <input type="number" class="form-control" id="amount" placeholder="Enter amount" required>
+
+        <!-- Mortgage Term and Interest Rate -->
+        <div class="form-inline">
+          <div class="form-item">
+            <label for="term">Mortgage Term (years):</label>
+            <input type="number" class="form-control" id="term" placeholder="Enter term in years" required>
+          </div>
+          <div class="form-item">
+            <label for="rate">Interest Rate (%):</label>
+            <input type="number" class="form-control" id="rate" placeholder="Enter interest rate" step="0.01" required>
+          </div>
+        </div>
+
+        <!-- Mortgage Type -->
+        <label>Mortgage Type:</label>
+        <div class="radio-group">
+          <div class="radio-1">
+            <input type="radio" id="repayment" name="type" value="repayment" checked>
+          <label for="repayment">Repayment</label>
+          </div>
+          
+          <div class="radio-2">
+            <input type="radio" id="interestOnly" name="type" value="interestOnly">
+          <label for="interestOnly">Interest Only</label>
+          </div>
+          
+        </div>
+
+        <!-- Calculate Button -->
+        <button type="button" class="btn w-100" style="background-color: #D3F1DF;
+         color: white; border: none; " id="calculateBtn"> Calculate</button>
+      </form>
+    </div>
+
+    <!-- Result Section -->
+    <div class="result-section">
+      <h2>RESULT</h2>
+      <p id="result"></p>
+      <img src="./calc.svg" alt="">
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

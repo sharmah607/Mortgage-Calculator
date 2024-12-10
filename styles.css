@@ -1,0 +1,134 @@
+body {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    font-family: "Poppins", serif;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-section {
+    padding: 20px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #85A98F;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    
+  }
+
+  .result-section {
+    padding: 20px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #5A6C57;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input[type='number'] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .form-inline {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 800px) {
+    .form-inline {
+      flex-direction: column;
+    }
+  }
+  
+  .radio-group {
+    margin-bottom: 15px;
+  }
+
+  .radio-1 {
+    display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  padding: 10px;
+  margin-bottom: 10px;
+  }
+
+  .radio-2 {
+    display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  padding: 10px;
+  margin-bottom: 10px;
+  }
+  
+  .radio-group input[type='radio'] {
+    margin-right: 5px;
+  }
+  
+  input[type="radio"] {
+    accent-color: #D3F1DF; 
+  }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  .title {
+    margin: 0;
+    margin-right: 10px;
+  }
+  
+  .clear-button {
+    padding-bottom: 10px;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .clear-button:hover {
+    text-decoration: underline;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title {
+    margin-bottom: 10px;
+  }
+  
+  .clear-button {
+    background: none;
+    border: none;
+  }
